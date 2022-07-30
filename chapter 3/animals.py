@@ -1,4 +1,4 @@
-animals = ["horse", "zebra", "mule", "donkey"]
+animals =["horse", "zebra", "giraffe"]
 for animal in animals:
-    print(f"A {animal} would make a great pet")
-print("\nAny of these animals would make a great pet")
+    print(f" A {animal} has four legs")
+print(f"These animals make ok pets. A {animals[2]} would be the coolest pet")
