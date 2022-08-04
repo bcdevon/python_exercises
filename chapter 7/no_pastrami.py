@@ -1,8 +1,9 @@
 sandwich_orders = ['pastrami', 'pastrami', 'pastrami', 'monte cristo', 'cheese steak', 'grilled cheese']
 finished_sandwiches = []
 
-while sandwich_orders:
+while 'pastrami' in sandwich_orders:
     sandwich_orders.remove('pastrami')
+print("The deli has run out of pastrami. ")
 
 while sandwich_orders:
     making_sandwich = sandwich_orders.pop()
