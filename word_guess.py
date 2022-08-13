@@ -1,5 +1,5 @@
 word = input("guess 5 letter word ")
-text = "qwerty"
+text = "hello"
 
 
 # X means wrong letter and place.
