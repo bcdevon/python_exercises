@@ -1,5 +1,7 @@
 word = input("guess 5 letter word ")
+
 text = "hello"
+text = "atone"
 
 
 # X means wrong letter and place.
