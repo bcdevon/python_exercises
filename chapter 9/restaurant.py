@@ -19,4 +19,8 @@ print(f"{new_restaurant.cuisine_type}")
 new_restaurant.describe_restaurant()
 my_food.describe_restaurant()
 your_food.describe_restaurant()
+<<<<<<< HEAD
 new_restaurant.open_restaurant()
+=======
+new_restaurant.open_restaurant()
+>>>>>>> 83de09af7e6efa49d99697bbe552c4b4cddf0ef1
