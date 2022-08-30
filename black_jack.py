@@ -53,7 +53,7 @@ def play():
         #loop bust or stay. everything in loop probably in function named turn
         player_hand_value = calculate_hand(player_hand)
         while player_hand_value <= 21:
-            print(player_hand_value)
+            
             #print to user controls
             display_controls()
             #get user input
@@ -66,10 +66,31 @@ def play():
             else:
                 player_hand.extend(draw_card(deck))
                 player_hand_value = calculate_hand(player_hand)
+            print('player hand value before loop', player_hand_value)
         #end loop
+        print('player hand value after loop', player_hand_value)
 
         #dealers turn function
+        #while dealerhand value < 17
+        dealer_hand_value = calculate_hand(dealer_hand)
+        print('dealer hand value before loop', dealer_hand_value)
+        while dealer_hand_value < 17:
+            #draw card
+            dealer_hand.extend(draw_card(deck))
+            #calculate hand value
+            dealer_hand_value = calculate_hand(dealer_hand)
+            print('dealer hand value in loop', dealer_hand_value)
+        print('dealer hand value after loop', dealer_hand_value)
+
+
         #evaluate hands 
+        #bust 
+        #if player bust player loses
+        if player_hand_value > 21:
+            print('bust')
+        #elif dealer bust player wins
+        #elif dealer hand value = player hand value split pot
+        #else whoever has a higher hand wins
         
 play()
 
