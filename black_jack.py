@@ -53,7 +53,7 @@ def play():
         #loop bust or stay. everything in loop probably in function named turn
         player_hand_value = calculate_hand(player_hand)
         while player_hand_value <= 21:
-            
+            print(player_hand_value)
             #print to user controls
             display_controls()
             #get user input
@@ -87,11 +87,20 @@ def play():
         #bust 
         #if player bust player loses
         if player_hand_value > 21:
-            print('bust')
+            print('you bust')
         #elif dealer bust player wins
-        #elif dealer hand value = player hand value split pot
+        elif dealer_hand_value > 21:
+            print('dealer bust')
+        #elif dealer hand value == player hand value split pot
+        elif dealer_hand_value == player_hand_value:
+            print('draw split the pot')
         #else whoever has a higher hand wins
+        elif dealer_hand_value > player_hand_value:
+            print('dealer wins')
+        else:
+            print('you win')        
         
+
 play()
 
 
