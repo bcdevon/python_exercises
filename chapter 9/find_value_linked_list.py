@@ -17,6 +17,11 @@ list1.head.next.next = node(10)
 list1.head.next.next.next = node(13)
 
 iter = list1.head
-while iter.next.value != 13:
+while iter is not None:
+    if iter.value == 13:
+        print(f"{iter.value} is in the linked list")
+    elif iter.next is None:
+        print("value not found")
     iter = iter.next
-print(f"{iter.next.value} is in the linked list")
+    
+    
