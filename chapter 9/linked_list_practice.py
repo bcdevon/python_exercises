@@ -19,7 +19,8 @@ while iter is not None:
 iter = head
 while iter.next is not None:
     iter = iter.next
-iter.next = node(9) 
+iter.next = node(9)
+
 
 # iter = head
 # while iter.next.value != 9:
@@ -28,9 +29,9 @@ iter.next = node(9)
 # iter.next = None
 # del del_me 
 
-iter = head
-while iter is not None:
-    print(iter.value)
-    iter = iter.next
+# iter = head
+# while iter is not None:
+#     print(iter.value)
+#     iter = iter.next
 
 
