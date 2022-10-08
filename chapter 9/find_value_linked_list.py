@@ -16,17 +16,21 @@ list1.head.next = node(8)
 list1.head.next.next = node(10)
 list1.head.next.next.next = node(13)
 
-iter = list1.head
-found = False
-while iter.next is not None:
-    if iter.next.value == 13:
-        found = True
-        break  
-    iter = iter.next
-if found == True:
-    print("value was found")
-elif found == False:
-    print("value not found")
+def find_value(head):
+    find_value = input("Enter value ")
+    iter = head
+    found = False
+    while iter.next is not None:
+        if iter.next.value == int(find_value):
+            found = True
+            break  
+        iter = iter.next
+    if found == True:
+        print("value was found")
+    elif found == False:
+        print("value not found")
+
+find_value(list1.head)
 
 
 

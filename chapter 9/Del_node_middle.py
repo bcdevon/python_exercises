@@ -25,6 +25,7 @@ while iter.next.value != 10:
     iter = iter.next
 del_me = iter.next
 iter.next = iter.next.next
+del_me = None
 del del_me
     
 iter = list1.head
