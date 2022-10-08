@@ -18,11 +18,11 @@ list1.head.next.next = node(10)
 list1.head.next.next.next = node(13)
 
 temp = list1.head
-head = list1.head.next
+list1.head = list1.head.next
 temp = None
 del temp
         
-iter = head
+iter = list1.head
 while iter is not None:
     print(iter.value)
     iter = iter.next
