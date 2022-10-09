@@ -19,19 +19,35 @@ list1.head.next = node(8)
 list1.head.next.next = node(10)
 list1.head.next.next.next = node(13)
 
-
-iter = list1.head
-while iter.next.value != 10:
-    iter = iter.next
-del_me = iter.next
-iter.next = iter.next.next
-del_me = None
-del del_me
+def del_node_middle(head):
+    del_node = input("enter node to delete ")
+    iter = head
+    found = False
+    while iter.next is not None:
+        if iter.next.value == int(del_node):
+            found = True
+            break
+        iter = iter.next
+    if found == True:
+        del_me = iter.next
+        iter.next = iter.next.next
+        del_me = None
+        del del_me
+        print("node deleted")
+    elif found == False:
+        print("value not in linked list")
     
+    iter = head
+    while iter is not None:
+        print(iter.value)
+        iter = iter.next
+
 iter = list1.head
 while iter is not None:
     print(iter.value)
     iter = iter.next
+
+del_node_middle(list1.head)
 
 
 
