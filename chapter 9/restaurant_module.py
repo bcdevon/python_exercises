@@ -18,14 +18,4 @@ class Restaurant:
        self.number_served = input('how many people were served: ')
 
 
-restaurant = Restaurant('mcdonalds', 'fast food')
-new_restaurant = Restaurant('evangelos', 'italian')
-my_food = Restaurant('mcdonalds', 'american')
-your_food = Restaurant('KFC', 'southern')
-print(f"{new_restaurant.restaurant_name}")
-print(f"{new_restaurant.cuisine_type}")
-restaurant.increment_number_served()
-restaurant.increment_number_served()
-restaurant.increment_number_served()
-restaurant.increment_number_served()
-print(f"{restaurant.restaurant_name} {restaurant.number_served}")
+

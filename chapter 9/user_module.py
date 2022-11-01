@@ -40,18 +40,3 @@ class Privileges():
 
 
 privileges = ['can add post', 'can delete post', 'can ban user']
-# new_user = User('brady', 'devon', 35, 'bdevon')
-# old_man = User('kurt', 'devon', 65, 'kdevon')
-# the_boss = Admin('Alyssa', 'devon', 28, 'adevon', privileges)
-# new_user.greet_user()
-# new_user.describe_user()
-# old_man.describe_user()
-# old_man.increment_login_attempts()
-# old_man.increment_login_attempts()
-# old_man.increment_login_attempts()
-# old_man.increment_login_attempts()
-# old_man.greet_user()
-# print(f"you have made {old_man.login_attempts} login attempts")
-# the_boss.show_privileges()
-
-
