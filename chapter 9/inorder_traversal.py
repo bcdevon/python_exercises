@@ -8,15 +8,26 @@ class TreeNode:
 #        3
 #      /   \
 #    5      10
-#   / \    /  \
-#  2   9  13   6
+#   /      /  \
+#  2      13   6
 root = TreeNode(3)
 root.left = TreeNode(5)
 root.right = TreeNode(10)
 root.left.left = TreeNode(2)
-root.left.right = TreeNode(9)
 root.right.left = TreeNode(13)
 root.right.right = TreeNode(6)
+
+iter = root
+if iter is not None:
+    print(iter.val)
+if iter.left is not None:   
+    print(iter.left.val)
+if iter.right is not None:
+    print(iter.right.val)
+if iter.left.left is not None:
+    print(iter.left.left.val)
+if iter.left.right is not None:
+    print(iter.left.right.val)  
 
 def traverse_tree_inorder(root):
     """Given the root, traverse the binary tree inorder, creating a list 
