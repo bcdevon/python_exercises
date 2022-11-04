@@ -13,11 +13,8 @@ example_seduko_board = [
     [1,2,3,4,5,6,7,8,9],
     [1,2,3,4,5,6,7,8,9],
 ]
-set = {1,2,3,4,5,6,7,8,9}
-if example_seduko_board[0] in set:
-    print("True")
-else:
-    print("false")
+
+
 def is_row_valid(row_idx, seduko_board):
     """Given a row index and game board, return true if it is valid.
 
@@ -66,7 +63,16 @@ def is_row_valid(row_idx, seduko_board):
         ]
         result = False
     """
-    return True
+    sudoku_set = {1,2,3,4,5,6,7,8,9}
+    get_set = set()
+    for num in seduko_board[row_idx]:
+        get_set.add(num)
+    if sudoku_set == get_set:
+        return True
+    else:
+        return False
+
+is_row_valid(2, example_seduko_board)
 
 
 def is_board_valid(seduko_board):
