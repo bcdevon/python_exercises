@@ -74,6 +74,11 @@ def is_row_valid(row_idx, seduko_board):
 
 is_row_valid(2, example_seduko_board)
 
+def is_col_valid(col_idx, seduko_board):
+    sudoku_set = {1,2,3,4,5,6,7,8,9}
+    get_set = set()
+    for num in seduko_board[row_idx, col_idx]
+
 
 def is_board_valid(seduko_board):
     """Given a game board, return true if it is valid.
@@ -120,7 +125,14 @@ def is_board_valid(seduko_board):
         ]
         result = True
     """
-    return True
+    row_indx = 0
+    while row_indx < 9 and is_row_valid(row_indx, example_seduko_board) == True:
+        row_indx += 1
+        return True 
+    else:
+        return False
+        
+is_board_valid(example_seduko_board)
 
 def sudoku_solver(game_board):
     """Given a game board, solve it.

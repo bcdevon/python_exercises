@@ -1,3 +1,6 @@
+from ast import Delete
+
+
 class node:
     def __init__(self, value, next=None):
         self.value = value
@@ -15,33 +18,24 @@ list1.head.next.next.next = node(9)
 list1.head.next.next.next.next = node(5)
 list1.head.next.next.next.next.next = node(2)
 
-def del_nodes_value(head, value):
-    iter = head
-    del_node = value
-    if iter == int(del_node):
-        return iter
-    if iter.value == int(del_node) and iter.next is None:
+def del_nodes_value(head, num):
+    if head.value == int(num):
         del_head = head
+        head = head.next
         del_head = None
         del del_head
-     
+    iter = head   
     while iter.next is not None:
-        if head.value == int(del_node):
-            del_head = head
-            head = head.next
-            del_head = None
-            del del_head
-        if iter.next.value == int(del_node):
+        if iter.next.value == int(num):
             del_me = iter.next
             iter.next = iter.next.next
             del_me = None
             del del_me
-            print(f"node with {value} deleted")
-       
+            print(f"node with {num} deleted")
         iter = iter.next
     iter = head
     while iter is not None:
         print(iter.value)
         iter = iter.next
 
-del_nodes_value(list1.head, 5)
+del_nodes_value(list1.head, 2)
