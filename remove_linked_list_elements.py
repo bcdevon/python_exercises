@@ -33,6 +33,10 @@ def del_nodes_value(head, num):
             del del_me
             print(f"node with {num} deleted")
         iter = iter.next
+    # if iter.value == int(num) and iter.next is None:
+    #     del_tail = iter
+    #     del_tail = None
+    #     del del_tail
     iter = head
     while iter is not None:
         print(iter.value)
