@@ -26,10 +26,17 @@ matching numbers but not within k
 nums = [1, 2, 3, 2]
 
 def containsNearbyDuplicate(nums, k):
+    duplicate = set()
+    nums_set = set(nums)
     for i in range (len(nums)):
-        for j in range (i+1, len(nums)):
-            if nums[i] == nums[j] and abs(i - j) == k:
-                return True
+        if nums[i] in duplicate and abs() :
+            duplicate.add(nums[i])
+        if abs(num_set[0] - nums_set[1]) <=k:
+            print("True")
+    # for i in range (len(nums)):
+    #     for j in range (i+1, len(nums)):
+    #         if nums[i] == nums[j] and abs(i - j) <= k:
+    #             return True
 
 containsNearbyDuplicate(nums, 2)
     
