@@ -23,33 +23,24 @@ more than one match
 matching numbers within k
 matching numbers but not within k
 '''
-# unique = {}
-# double = {}
-# dict1 = {}
-# nums = [8,2,11,2,4]
-# dict1 = dict(enumerate(nums))
-# for x,y in dict1:
-#     if y
-#     if y not in unique:
-#         unique.__setitem__(x, y)
-#     elif y in unique
-# for i in nums:
-#     if i not in unique:
-#         uniquelist.append(i)
-#     elif i in uniquelist:
-#         doublelist.append(i)
+nums = [1,2,3,2,4,4,5,6]
 
 
-# nums = [8,2,11,2,4]
-# def containsNearbyDuplicate(nums, k):
-nums = [8,2,11,2,4]
-dict1 = {}
-dict1 = dict(enumerate(nums))
-print(dict1)
-#     if v in dict1 and i - dict[v] <= 3:
-#         print("True")
-#     dict[v] = i
-# print("False")
+
+def containsNearbyDuplicate(nums, k): 
+    value_indices = {}
+    for i in range (len(nums)):
+        if nums[i] in value_indices:
+            for j in value_indices[nums[i]]:
+                if abs(i - j) <= k:
+                    return True
+            value_indices[nums[i]].append(i)
+        else:
+            value_indices[nums[i]] = [i]   
+    return False
+
+
+
 
 
 
