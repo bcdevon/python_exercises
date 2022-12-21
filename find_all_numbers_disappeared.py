@@ -1,4 +1,4 @@
-nums = [1,1]
+nums = [1,1,1]
 max = 0
      
 missing_numbers = []
@@ -10,3 +10,8 @@ for j in not_disappeared:
     if j not in nums_set:
         missing_numbers.append(j)
 print(missing_numbers)
+
+
+
+
+     
