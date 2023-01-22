@@ -4,12 +4,12 @@ class TreeNode:
             self.left = left
             self.right = right
 
-root = TreeNode(3)
+root = TreeNode(10)
 root.left = TreeNode(5)
-root.right = TreeNode(10)
+root.right = TreeNode(9)
 root.left.left = TreeNode(2)
 root.left.right = TreeNode(9)
-root.right.left = TreeNode(13)
+root.right.left = TreeNode(8)
 
 def rangeSumBST(root, low, high):
     total = 0
@@ -29,4 +29,4 @@ def rangeSumBST(root, low, high):
                 stack.append(node.right)
     return total
 
-print(rangeSumBST(root, 2, 10))
+print(rangeSumBST(root, 10, 13))
