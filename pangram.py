@@ -2,8 +2,8 @@
 
 def checkIfPangram(sentence):
     alphabet = set("abcdefghijklmnopqrstuvwxyz")
-    new_sentence = set(sentence)
-    if alphabet == new_sentence:
+    sentence = set(sentence)
+    if alphabet == sentence:
         print("True")
     else:   
         print("False")

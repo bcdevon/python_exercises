@@ -9,3 +9,5 @@ for i in s:
         count += 1
 print(count)
 
+"""time complexity is O(n) n is the length of s"""
+
