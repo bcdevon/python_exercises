@@ -33,3 +33,4 @@ if inorder_traversal(root) == list_d:
 else:
     print("False")
 
+

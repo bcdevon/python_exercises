@@ -36,12 +36,13 @@ def remove_element(head, num):
         elif iter.next.value != num:
             iter = iter.next
 
-    iter = head
-    while iter is not None:
-        print(iter.value)
-        iter = iter.next
+    print(head.value)
+    # iter = head
+    # while iter is not None:
+    #     print(iter.value)
+    #     iter = iter.next
 
-remove_element(list1.head, 8)
+remove_element(list1.head, 7)
 
 
 
